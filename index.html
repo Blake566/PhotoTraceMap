@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoTrace Map Support</title>
+  <style>
+    :root {
+      --bg: #f4efe3;
+      --card: #ffffff;
+      --ink: #1d2630;
+      --muted: #5d6774;
+      --line: #e2d9c5;
+      --accent: #8d5e1e;
+      --accent-2: #c6a45f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #f5e7c8 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #4d2f0a 0%, var(--accent) 52%, var(--accent-2) 100%);
+      color: white;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 24px 60px rgba(29, 38, 48, 0.18);
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+    h1, h2 { margin: 0 0 10px; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.15rem; }
+    p, li { color: var(--muted); }
+    .hero p { color: rgba(255,255,255,0.94); }
+    ul, ol { padding-left: 22px; margin: 0; }
+    .meta { margin-top: 10px; color: rgba(255,255,255,0.82); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>PhotoTrace Map Support</h1>
+      <p class="meta">Updated: April 3, 2026</p>
+      <p>PhotoTrace Map helps you map camera photos and videos by using nearby GPS-tagged reference photos in the same folder, then review anything that still needs a location.</p>
+    </section>
+
+    <section class="card">
+      <h2>Getting started</h2>
+      <ol>
+        <li>Choose one trip folder that includes your camera photos, videos, and GPS-tagged phone photos if possible.</li>
+        <li>Wait for the scan to finish reading metadata and matching missing locations.</li>
+        <li>Open map points to review mapped media by place.</li>
+        <li>Use the GPS Unidentified page to review unmatched groups, remove wrongly grouped items, and apply a nearby match.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>How matching works</h2>
+      <ul>
+        <li>Embedded GPS coordinates are used directly when available.</li>
+        <li>Photos and videos without GPS may be matched from nearby capture times using GPS-tagged photos in the same folder as reference points.</li>
+        <li>Camera RAW formats and common video formats are supported during scanning.</li>
+        <li>Items that still cannot be matched remain in GPS Unidentified for review.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>GPS Unidentified workflow</h2>
+      <ul>
+        <li>Each missing group is shown as a task queue based on date.</li>
+        <li>Review the photos in the group first and remove any item that should be split into its own new group.</li>
+        <li>Use a nearby match recommendation, online place search, or a visited place to fix the whole group.</li>
+        <li>Apply changes to refresh the results after queuing edits.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>If folder contents changed, return to the map and run Rescan.</li>
+        <li>If place names are missing, use the unknown place-name action to resolve them and save them to cache.</li>
+        <li>If thumbnails look incorrect or take too much space, clear the thumbnail cache from Settings.</li>
+        <li>If there are not enough GPS-tagged reference photos in the selected folder, matching results may be limited.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy summary</h2>
+      <p>PhotoTrace Map keeps scanning, matching, caches, and manual review data on your Mac. Only optional place-name lookup and online place search contact Apple map services when you use them.</p>
+      <p><a href="./privacy.html">View the Privacy Policy</a></p>
+    </section>
+  </main>
+</body>
+</html>
